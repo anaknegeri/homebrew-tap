@@ -6,6 +6,10 @@ class AgentSession < Formula
   homepage "https://agent-session.dev"
   license "MIT"
   version "0.1.1"
+  bottle do
+    root_url "https://github.com/anaknegeri/agent-session/releases/download/v0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "872d819df62f98f7ba05502268738c42cb0b91fad02b7b2b4e657e501bd05045"
+  end
 
   on_macos do
     if Hardware::CPU.arm?
