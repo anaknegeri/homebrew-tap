@@ -6,6 +6,7 @@ class AgentSession < Formula
   homepage "https://agent-session.dev"
   license "MIT"
   version "0.1.1"
+  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
